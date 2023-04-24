@@ -10,10 +10,11 @@
 <body>
     <div id="chosefile">
         <label>Music player</label>
-        <input type="file" id="file" style="display: none;" onchange="showFileName()" accept="audio/*">
-        <label for="file" id="file-label" class="btn-choose-file">Select</label>
-        <p id="file-name" style="display: none;"></p>            
-        <button id="btnplay" style="display: none;">Play</button>
+        <button id="select-btn" onclick="showButtons()">Start</button>
+        <button onclick="redirectToPage1()" style="display: none;" id="button1">Music-1</button>
+        <button onclick="redirectToPage2()" style="display: none;" id="button2">Music-2 </button>
+        <button onclick="redirectToPage3()" style="display: none;" id="button3">Music-3</button>
+        </div>  
     </div>
     <script src="script.js"></script>
 </body>

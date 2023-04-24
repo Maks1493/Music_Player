@@ -1,24 +1,18 @@
-const fileInput = document.getElementById('file');
-const submitButton = document.getElementById('btnplay');
-
-fileInput.addEventListener('change', () => {
-  if (fileInput.value) {
-    submitButton.style.display = 'block';
-  } else {
-    submitButton.style.display = 'none';
-  }
-});
-
-function showFileName() {
-  var input = document.getElementById("file");
-  var fileName = document.getElementById("file-name");
-  var playButton = document.getElementById("btnplay");
-
-  if (input.files.length > 0) {
-    fileName.innerHTML = input.files[0].name;
-    fileName.style.display = "inline-block";
-    playButton.style.display = "inline-block";
-    document.getElementById("file-label").style.display = "none";
-    document.getElementById("file").style.display = "none";
-  }
+function showButtons() {
+  document.getElementById("select-btn").style.display = "none";
+  document.getElementById("button1").style.display = "inline-block";
+  document.getElementById("button2").style.display = "inline-block";
+  document.getElementById("button3").style.display = "inline-block";
+  document.getElementById("chosefile").style.width = "45%";
+  document.getElementById("chosefile").style.height = "45%";
 }
+function redirectToPage1() {
+  window.location.href = "music1.html";
+}
+function redirectToPage2() {
+  window.location.href = "music2.html";
+}
+function redirectToPage3() {
+  window.location.href = "music3.html";
+}
+

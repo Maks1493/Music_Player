@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>Music Player</title>
 </head>
 <body>
+    <h1 id="h1home">Music player</h1>
+    <h3 class="ml13">Simple music player with three songs</h3>
     <div id="chosefile">
-        <label>Music player</label>
-        <button id="select-btn" onclick="showButtons()">Start</button>
-        <button onclick="redirectToPage1()" style="display: none;" id="button1">Music-1</button>
-        <button onclick="redirectToPage2()" style="display: none;" id="button2">Music-2 </button>
-        <button onclick="redirectToPage3()" style="display: none;" id="button3">Music-3</button>
+        <button onclick="redirectToPage1()"  class="buttonselect">Aero Chord feat. DDARK - Shootin Stars [NCS Release]</button>
+        <button onclick="redirectToPage2()"  class="buttonselect">Warriyo - Mortals (feat. Laura Brehm) [NCS Release]</button>
+        <button onclick="redirectToPage3()"  id="buttonselect">Elektronomia - Energy [NCS Release]</button>
         </div>  
     </div>
     <script src="script.js"></script>
